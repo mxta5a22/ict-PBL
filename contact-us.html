@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - AM WebSphere Hub</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #0044cc;
+      color: white;
+      padding: 1rem 2rem;
+    }
+    header .logo img {
+      height: 50px;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+    }
+    nav ul li {
+      margin: 0 15px;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav ul li a:hover {
+      color: #ffcc00;
+    }
+    main {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    form label {
+      margin: 1rem 0 0.5rem;
+      font-weight: bold;
+    }
+    form input, form textarea, form button {
+      font-size: 1rem;
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    form button {
+      background-color: #0044cc;
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    form button:hover {
+      background-color: #0033a0;
+    }
+    .contact-info, .social-media {
+      margin: 2rem 0;
+    }
+    .contact-info p, .social-media a {
+      margin: 0.5rem 0;
+    }
+    .social-media a {
+      color: #0044cc;
+      text-decoration: none;
+      margin-right: 15px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    .social-media a:hover {
+      color: #ff6600;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #0044cc;
+      color: white;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <img src="C:/Users/Mr Laptop/Desktop/New folder/images/wb.jpg" alt="Website Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="contact-us.html">Contact Us</a></li>
+        <li><a href="services.html">Services</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <h1 style="text-align: center;">Contact Us</h1>
+    <p style="text-align: center;">If you have any questions, suggestions, or would like to collaborate, feel free to reach out to us. We're here to help!</p>
+
+    <!-- Contact Form -->
+    <form action="submit_contact.html" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your Name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" placeholder="Text here.." required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <!-- Contact Information -->
+    <section class="contact-info">
+      <h2>Contact Information</h2>
+      <p><strong>Address:</strong> 123 Innovation Street, Tech City</p>
+      <p><strong>Phone:</strong> (123) 456-7890</p>
+      <p><strong>Email:</strong> support@amwebspherehub.com</p>
+    </section>
+
+    <!-- Social Media Links -->
+    <section class="social-media">
+      <h2>Follow Us</h2>
+      <a href="https://facebook.com" target="_blank">Facebook</a>
+      <a href="https://twitter.com" target="_blank">Twitter</a>
+      <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 AM WebSphere Hub. All rights reserved.</p>
+  </footer>
+</body>
+</html>
