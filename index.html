@@ -6,95 +6,6 @@
   <title>Home - My Website</title>
   <link rel="stylesheet" href="styles.css">
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-      background-color: #f4f4f4;
-      color: #333;
-    }
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background-color: #0044cc;
-      color: white;
-      padding: 1rem 2rem;
-    }
-    header .logo img {
-      height: 50px;
-    }
-    nav ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      display: flex;
-    }
-    nav ul li {
-      margin: 0 15px;
-    }
-    nav ul li a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      transition: color 0.3s;
-    }
-    nav ul li a:hover {
-      color: #ffcc00;
-    }
-    .slider {
-      position: relative;
-      overflow: hidden;
-      max-width: 100%;
-      margin: 1rem 0;
-    }
-    .slide {
-      display: none;
-      text-align: center;
-    }
-    .slide.active {
-      display: block;
-    }
-    .slide img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 8px;
-    }
-    .slide p {
-      margin-top: 0.5rem;
-      font-size: 1.2rem;
-      color: #333;
-    }
-    main {
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 2rem;
-      background: white;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-    .intro {
-      text-align: center;
-    }
-    .intro h1 {
-      color: #0044cc;
-      margin-bottom: 1rem;
-    }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background-color: #0044cc;
-      color: white;
-      margin-top: 2rem;
-    }
-
-
-    * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 body {
     font-family: Arial, sans-serif;
@@ -103,8 +14,8 @@ body {
 
 .carousel-container {
     position: relative;
-    width: 600px;
-    margin: 50px auto;
+    width: 100%;
+    height: 600px; /* Set a fixed height for the carousel */
     overflow: hidden;
 }
 
@@ -119,7 +30,8 @@ body {
 
 .carousel-item img {
     width: 100%;
-    height: auto;
+    height: 100%; /* Ensure the image fills the container's height */
+    object-fit: cover; /* Maintain aspect ratio and cover the entire area */
 }
 
 /* Hide the radio buttons */
@@ -178,9 +90,10 @@ input[type="radio"] {
   </style>
 </head>
 <body>
-  <header>
-    <div class="logo">
-      <img src="C:/Users/Mr Laptop/Desktop/New folder/images/wb.jpg" alt="Website Logo">
+  <header style="padding:2rem 5rem;">
+    <div class="logo" style="display: flex; justify-content:center; align-items: center;">
+      <img src="images/wb.jpg" alt="Website Logo" style="border-radius:16px;">
+      <div style="letter-spacing: 2px; font-weight: bold; padding-left: 8px;">AM tax suppliers</div>
     </div>
     <nav>
       <ul>
@@ -218,9 +131,9 @@ input[type="radio"] {
 </div>
 
 
-  <div class="slider">
+  <!-- <div class="slider" style="margin-top: 10px;">
     <div class="slide active">
-      <img src="D:/New folder/s.webp" alt="Slide 1">
+      <img src="images/m.PNG" alt="Slide 1">
       <p>Welcome to Our Website!</p>
     </div>
     <div class="slide">
@@ -231,7 +144,7 @@ input[type="radio"] {
       <img src="images/slide3.jpg" alt="Slide 3">
       <p>Join Our Team of Experts</p>
     </div>
-  </div>
+  </div> -->
 
   <main>
     <section class="intro">
@@ -244,4 +157,4 @@ input[type="radio"] {
     <p>&copy; 2024 My Website. All rights reserved.</p>
   </footer>
   </body>
-  </html>
+</html>
