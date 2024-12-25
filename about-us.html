@@ -12,7 +12,7 @@
       padding: 0;
       line-height: 1.6;
       background-color: #f4f4f4;
-      color: #333;
+      background-color: #f4f4f4;
     }
     header {
       display: flex;
@@ -68,6 +68,10 @@
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
       width: calc(50% - 2rem);
     }
+    .team-member:hover{
+      background-color: rgb(52, 155, 224);
+      color: #fff;
+    }
     .team-photo {
       width: 150px;
       height: 150px;
@@ -87,7 +91,7 @@
 <body>
   <header>
     <div class="logo">
-      <img src="C:/Users/Mr Laptop/Desktop/New folder/images/wb.jpg" alt="Website Logo">
+      <img src="images/wb.jpg" alt="Website Logo">
     </div>
     <nav>
       <ul>
@@ -108,17 +112,20 @@
       <h2 style="text-align: center;">Meet the Founders</h2>
       <div class="team-members">
         <!-- Ali Osja -->
-        <div class="team-member">
-          <img src="C:/Users/Mr Laptop\Desktop/New folder/images/oja.jpg" alt="Ali Osja" class="team-photo">
-          <h3>Ali Osja</h3>
-          <p>A creative and tech-savvy individual, Ali brings his passion for innovative web solutions to AM WebSphere Hub...</p>
+        <div class="team-member" style="box-shadow: 0px 3px 10px 4px rgb(79, 136, 211);">
+          <img src="images/oja.jpg" alt="Ali Osja" class="team-photo">
+          <div class="inside"><h3>Ali Osja</h3>
+            <p>A creative and tech-savvy individual, Ali brings his passion for innovative web solutions to AM WebSphere Hub...</p></div>
         </div>
 
         <!-- Mustafa Rizwan -->
-        <div class="team-member">
-          <img src="C:/Users/Mr Laptop/Desktop/New folder/images/m.png" alt="Mustafa Rizwan" class="team-photo">
-          <h3>Mustafa Rizwan</h3>
+        <div class="team-member" style="box-shadow: 0px 3px 10px 4px rgb(79, 136, 211);">
+          <img src="images/m.PNG" alt="Mustafa Rizwan" class="team-photo">
+          <div class="inside">
+            <h3>Mustafa Rizwan</h3>
           <p>An analytical thinker with a strong foundation in technology, Mustafa excels in problem-solving and technical implementation...</p>
+          </div>
+          
         </div>
       </div>
     </section>
